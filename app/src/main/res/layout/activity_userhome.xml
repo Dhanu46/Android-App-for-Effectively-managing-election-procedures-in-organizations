@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/user"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+         />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/options"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:id="@+id/viewElection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/VIEW_ELECTION"
+            android:textSize="20sp"
+            android:checked="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+
+        <RadioButton
+            android:id="@+id/showNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/SHOW_NOTIFICATION"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+
+        <RadioButton
+            android:id="@+id/viewUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/VIEW_USERS"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+
+        <RadioButton
+            android:id="@+id/castVote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/CAST_VOTE"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/viewReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/VIEW_REPORTS"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/giveFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/GIVE_FEEDBACK"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:background="@drawable/button_selector"
+        android:onClick="next"
+        android:text="@string/NEXT"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+</ScrollView>
